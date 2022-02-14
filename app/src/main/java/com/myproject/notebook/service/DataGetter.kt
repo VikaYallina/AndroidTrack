@@ -8,19 +8,21 @@ import java.io.File
 import java.io.IOException
 
 class DataGetter {
-    private val filename = "data.json"
 
-    fun getStrFromJson(c:Context):String?{
-        return try {
-            val instr = c.assets.open(filename)
-            val size = instr.available()
-            val buffer = ByteArray(size)
-            instr.read(buffer)
-            instr.close()
-            String(buffer, Charsets.UTF_8)
-        }catch (e:IOException){
-            e.printStackTrace();
-            null;
+
+    companion object{
+        fun getStrFromJson(c:Context):String?{
+            return try {
+                val instr = c.assets.open("data.json")
+                val size = instr.available()
+                val buffer = ByteArray(size)
+                instr.read(buffer)
+                instr.close()
+                String(buffer, Charsets.UTF_8)
+            }catch (e:IOException){
+                e.printStackTrace();
+                null;
+            }
         }
     }
 

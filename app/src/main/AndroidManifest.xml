@@ -3,12 +3,16 @@
     package="com.myproject.notebook">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Notebook">
+        <activity
+            android:name=".CreateNoteActivity"
+            android:exported="false" />
         <activity
             android:name=".ExtraInfoActivity"
             android:exported="false" />

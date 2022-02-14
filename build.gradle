@@ -4,6 +4,9 @@ buildscript{
         google()
         mavenCentral()
     }
+    dependencies {
+        classpath "io.realm:realm-gradle-plugin:10.9.0"
+    }
 }
 
 plugins {
@@ -11,6 +14,8 @@ plugins {
     id 'com.android.library' version '7.1.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
+
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
