@@ -19,12 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="4"
+            android:weightSum="8"
             android:padding="8dp">
 
             <!-- Title, secondary and supporting text -->
             <TextView
-                android:layout_weight="3"
+                android:layout_weight="7"
                 android:id="@+id/card_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             <TextView
                 android:layout_weight="1"
                 android:id="@+id/card_time"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:text="@string/rvcard_time"

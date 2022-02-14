@@ -125,8 +125,9 @@ class MainActivity : AppCompatActivity() {
                 else
                     dateEnd.hour
 
-            // in case note's time is 00:00
-            if (hourEnd ==-1 ) hourEnd = 0
+            // in case note's end time is 00:00
+            if (hourEnd ==-1 )
+                continue
 
             for (i in hourStart..hourEnd)
                 timesArr[i].note = note

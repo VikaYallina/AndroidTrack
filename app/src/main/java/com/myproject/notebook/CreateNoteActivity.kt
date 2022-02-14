@@ -114,6 +114,8 @@ class CreateNoteActivity : AppCompatActivity() {
             return "End date is empty"
         if (dateStart.isAfter(dateEnd))
             return "End date cannot be before start date"
+        if (dateStart == dateEnd)
+            return "Start and end dates cannot be the same "
 
         return ""
     }

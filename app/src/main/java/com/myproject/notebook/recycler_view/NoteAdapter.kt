@@ -33,20 +33,6 @@ class NoteAdapter(
             holder.moreInfoBtn.visibility = View.VISIBLE
             holder.moreInfoBtn.setOnClickListener { onClickListener.onClick(note) }
         }
-//        val note = notes[position]
-//        val (_, dateStartMilli, dateEndMilli, name, _) = note
-//        holder.titleTextView.text = name
-//
-//        val dateStart = Utils.convertTimeStart(dateStartMilli)
-//        val dateEnd = Utils.convertTimeStart(dateEndMilli)
-//
-//        holder.timeTextView.text = "${dateStart.hour}:${dateEnd.hour}"
-//        holder.moreInfoBtn.setOnClickListener { object :View.OnClickListener{
-//            override fun onClick(p0: View?) {
-//
-//            }
-//
-//        } }
     }
 
     override fun getItemCount(): Int = timesOfDay.size

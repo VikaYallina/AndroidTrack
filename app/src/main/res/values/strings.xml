@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Notebook</string>
     <string name="rvcard_title">Title</string>
-    <string name="rvcard_time">00:00</string>
+    <string name="rvcard_time">12:00–12:59</string>
     <string name="rvcard_btn">show</string>
     <string name="create_name">Note name</string>
     <string name="create_date_begin">Date begin</string>
@@ -10,8 +10,8 @@
     <string name="create_button">Create</string>
     <string name="fab_content_desc">Create new note</string>
     <string name="create_btn_select">Select</string>
-    <string name="create_desc_hint">Input note description</string>
-    <string name="create_name_hint">Input note name</string>
+    <string name="create_desc_hint">Note description</string>
+    <string name="create_name_hint">Note name</string>
     <string name="create_start_date_hint">Start date</string>
     <string name="create_end_date_hint">End date</string>
 </resources>
